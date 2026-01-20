@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebParallelSuite" parallel="tests" thread-count="4">
+    <test name="RadioTests">
+        <classes>
+            <class name="runner.RadioButtonTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="CheckBoxTests">
+        <classes>
+            <class name="runner.CheckBoxTestRunner"/>
+        </classes>
+    </test>
+</suite>
