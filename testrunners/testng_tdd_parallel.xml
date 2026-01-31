@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TDD Suite" parallel="methods" thread-count="3">
+<suite name="TDD Suite" parallel="methods" thread-count="1">
 
 	<listeners>
 		<listener class-name="utils.FailureListener" />
@@ -9,6 +9,9 @@
 		<packages>
 			<package name="tdd" />
 		</packages>
+		<!--<classes>
+			<class name="tdd.CheckBoxTest" />
+		</classes>-->
 	</test>
 
 </suite>

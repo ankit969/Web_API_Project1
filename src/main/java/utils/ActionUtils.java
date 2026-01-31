@@ -20,7 +20,8 @@ public class ActionUtils {
 	
 	public void click(By locator) {
 		log.info("Clicking: {}", locator);
-		wait.waitForClickable(locator);
+		WebElement element = wait.waitForClickable(locator);
+		element.click();
 	}
 	
 	public void safeClick(By locator) {
@@ -47,6 +48,12 @@ public class ActionUtils {
 			log.warn("Click intercepted after scroll, using JS click: {}", locator);
 			new JavaScriptUtils(driver).jsClick(driver.findElement(locator));
 		}
+	}
+	
+	public void scrollIntoView(By locator) {
+	    WebElement element = wait.waitForVisibility(locator);
+	    ((JavascriptExecutor) driver)
+	            .executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
 	public void enterText(By locator, String text) {

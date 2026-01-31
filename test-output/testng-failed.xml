@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [TDD Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="methods" name="BDD Tests(failed)">
+<suite thread-count="1" parallel="methods" name="Failed suite [TDD Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="methods" name="BDD Tests(failed)">
     <classes>
-      <class name="bdd.runner.BddTestRunner">
+      <class name="bdd.runner.CucumberTestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 7 8 9"/>
+          <include name="runScenario" invocation-numbers="2 3 5 8"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- bdd.runner.BddTestRunner -->
+      </class> <!-- bdd.runner.CucumberTestRunner -->
     </classes>
   </test> <!-- BDD Tests(failed) -->
 </suite> <!-- Failed suite [TDD Suite] -->

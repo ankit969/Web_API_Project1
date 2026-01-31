@@ -30,7 +30,7 @@ public class TextBoxTest extends BaseTest{
 		textBoxPage = new TextBoxPage();
 	}
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void tc01_validSubmission() {
 		//TextBoxPage textBoxPage = new TextBoxPage();
 		

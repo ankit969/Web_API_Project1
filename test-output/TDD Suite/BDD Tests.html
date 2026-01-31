@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>BDD Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 20 19:56:31 IST 2026</td>
+<td>Started on:</td><td>Mon Jan 26 19:58:14 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83324 ms)</td>
+<tr><td>Total time:</td><td>137 seconds (137540 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,242 +76,84 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Collapse and expand selection persistence", "CheckBox selection validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.488
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c04b1a406332e8760c94022e21d8e225, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53148}, goog:processID: 14420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53148/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c04b1a406332e8760c94022e21d8e225
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:25)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1345584611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1345584611'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.488
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c04b1a406332e8760c94022e21d8e225, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53148}, goog:processID: 14420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53148/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c04b1a406332e8760c94022e21d8e225
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:25)
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Special characters in name", "TextBox form validation"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at bdd.stepdefinitions.TextBoxSteps.output_name_should_be(TextBoxSteps.java:40)
+	at ✽.output name should be &quot;John@123&quot;(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:21)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10042600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10042600'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at bdd.stepdefinitions.TextBoxSteps.output_name_should_be(TextBoxSteps.java:40)
+	at ✽.output name should be &quot;John@123&quot;(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:21)
 </pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
+<td>25</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
 <tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Special characters in name", "TextBox form validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.001
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f62775851f1d843ce239ee751c5e198b, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53308}, goog:processID: 6656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53308/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f62775851f1d843ce239ee751c5e198b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:19)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1563050910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1563050910'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.001
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f62775851f1d843ce239ee751c5e198b, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53308}, goog:processID: 6656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53308/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f62775851f1d843ce239ee751c5e198b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:19)
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Documents checkbox", "CheckBox selection validation"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;selected results should contain &quot;documents&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;selected results should contain {string}&quot;)
+public void selected_results_should_contain(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1289629405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1289629405'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;selected results should contain &quot;documents&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;selected results should contain {string}&quot;)
+public void selected_results_should_contain(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>57</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
+<td>8</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
 <tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Documents checkbox", "CheckBox selection validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.033
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52d7870ac470f4ea6cdf5ac3d6ac8dce, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53281}, goog:processID: 13992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53281/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 52d7870ac470f4ea6cdf5ac3d6ac8dce
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:14)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1678628363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1678628363'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 27.033
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [52d7870ac470f4ea6cdf5ac3d6ac8dce, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53281}, goog:processID: 13992, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53281/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 52d7870ac470f4ea6cdf5ac3d6ac8dce
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:14)
-</pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
-<tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Home checkbox", "CheckBox selection validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.297
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5380d4b5e979e5150f2dc1d922a68220, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53180}, goog:processID: 12252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53180/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5380d4b5e979e5150f2dc1d922a68220
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:4)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1619474782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1619474782'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.297
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5380d4b5e979e5150f2dc1d922a68220, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53180}, goog:processID: 12252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53180/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5380d4b5e979e5150f2dc1d922a68220
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:4)
-</pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
-<tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid form submission", "TextBox form validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 23.443
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [341b720f6e55c9316988252b25dba4d4, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53318}, goog:processID: 7116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53318/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 341b720f6e55c9316988252b25dba4d4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:4)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace856996271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace856996271'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 23.443
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [341b720f6e55c9316988252b25dba4d4, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53318}, goog:processID: 7116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53318/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 341b720f6e55c9316988252b25dba4d4
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:4)
-</pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
-<tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select multiple checkboxes", "CheckBox selection validation"</td>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select multiple checkboxes", "CheckBox selection validation"</td>
 <td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is on checkBox page&apos; is undefined.
 You can implement this step using the snippet(s) below:
 
@@ -329,11 +171,13 @@ public void user_is_on_check_box_page() {
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace728797548", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace728797548'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is on checkBox page&apos; is undefined.
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace367453509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace367453509'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user is on checkBox page&apos; is undefined.
 You can implement this step using the snippet(s) below:
 
 @Given(&quot;user is on checkBox page&quot;)
@@ -355,161 +199,36 @@ public void user_is_on_check_box_page() {
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>19</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
+<td>1</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
 <tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid email submission", "TextBox form validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37243b6e59817c005fbbab9712a02399, executeScript {script=return document.readyState, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53121}, goog:processID: 9536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53121/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 37243b6e59817c005fbbab9712a02399
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:465)
-	at utils.WaitUtils.lambda$waitForPageLoadComplete$0(WaitUtils.java:44)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at utils.WaitUtils.waitForPageLoadComplete(WaitUtils.java:44)
-	at pages.TextBoxPage.open(TextBoxPage.java:25)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:14)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625554968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1625554968'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37243b6e59817c005fbbab9712a02399, executeScript {script=return document.readyState, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53121}, goog:processID: 9536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53121/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 37243b6e59817c005fbbab9712a02399
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:465)
-	at utils.WaitUtils.lambda$waitForPageLoadComplete$0(WaitUtils.java:44)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at utils.WaitUtils.waitForPageLoadComplete(WaitUtils.java:44)
-	at pages.TextBoxPage.open(TextBoxPage.java:25)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:14)
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid form submission", "TextBox form validation"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at bdd.stepdefinitions.TextBoxSteps.output_name_should_be(TextBoxSteps.java:40)
+	at ✽.output name should be &quot;John&quot;(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:6)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1520642220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1520642220'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at bdd.stepdefinitions.TextBoxSteps.output_name_should_be(TextBoxSteps.java:40)
+	at ✽.output name should be &quot;John&quot;(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:6)
 </pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
-<tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Desktop checkbox", "CheckBox selection validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.702
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21c13b122e5fe930ac8bef58267aa660, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53118}, goog:processID: 16400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53118/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21c13b122e5fe930ac8bef58267aa660
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:9)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1460759805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1460759805'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.702
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21c13b122e5fe930ac8bef58267aa660, get {url=https://demoqa.com/checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53118}, goog:processID: 16400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53118/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 21c13b122e5fe930ac8bef58267aa660
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.CheckBoxPage.open(CheckBoxPage.java:18)
-	at bdd.stepdefinitions.CheckBoxSteps.user_is_on_check_box_page(CheckBoxSteps.java:19)
-	at ✽.user is on CheckBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/checkbox.feature:9)
-</pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
-<tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Long address submission", "TextBox form validation"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.206
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3428b0db98e5e7f010589c2046bd443c, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53182}, goog:processID: 15196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53182/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3428b0db98e5e7f010589c2046bd443c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:24)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902781105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace902781105'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 28.206
-  (Session info: chrome=143.0.7499.193)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3428b0db98e5e7f010589c2046bd443c, get {url=https://demoqa.com/text-box}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53182}, goog:processID: 15196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53182/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3428b0db98e5e7f010589c2046bd443c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)
-	at pages.TextBoxPage.open(TextBoxPage.java:24)
-	at bdd.stepdefinitions.TextBoxSteps.user_is_on_text_box_page(TextBoxSteps.java:19)
-	at ✽.user is on TextBox page(file:///G:/Automation/Web_API_Project1/src/test/resources/features/textbox.feature:24)
-</pre></div></td>
-<td>55</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
+<td>7</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -520,10 +239,35 @@ Session ID: 3428b0db98e5e7f010589c2046bd443c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bdd.runner.BddTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.BddTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty form submission", "TextBox form validation"</td>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Home checkbox", "CheckBox selection validation"</td>
 <td></td>
-<td>82</td>
-<td>bdd.runner.BddTestRunner@4a3329b9</td></tr>
+<td>11</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
+<tr>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty form submission", "TextBox form validation"</td>
+<td></td>
+<td>25</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
+<tr>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid email submission", "TextBox form validation"</td>
+<td></td>
+<td>27</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
+<tr>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Desktop checkbox", "CheckBox selection validation"</td>
+<td></td>
+<td>8</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
+<tr>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Long address submission", "TextBox form validation"</td>
+<td></td>
+<td>9</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
+<tr>
+<td title='bdd.runner.CucumberTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.runner.CucumberTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Collapse and expand selection persistence", "CheckBox selection validation"</td>
+<td></td>
+<td>12</td>
+<td>bdd.runner.CucumberTestRunner@4a3329b9</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TDD Suite" parallel="methods" thread-count="3">
+<suite name="TDD Suite" parallel="methods" thread-count="1">
 
 
 	<test name="BDD Tests">
 		<classes>
-		<class name="bdd.runner.BddTestRunner"/>
+		<class name="bdd.runner.CucumberTestRunner"/>
 		</classes>
 	</test>
 

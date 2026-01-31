@@ -9,7 +9,7 @@ public class CheckBoxPage extends BasePage{
 	 // Locators
 	private By expandAllBtn = By.cssSelector("button[title='Expand all']");
     private By collapseAllBtn = By.cssSelector("button[title='Collapse all']");
-    private By homeCheckbox = By.cssSelector("label[for='tree-node-home'] span.rct-checkbox");
+    private By homeCheckbox = By.cssSelector("span[class='rct-checkbox']");
     private By desktopCheckbox = By.cssSelector("label[for='tree-node-desktop'] span.rct-checkbox");
     private By documentsCheckbox = By.cssSelector("label[for='tree-node-documents'] span.rct-checkbox");
     private By resultItems = By.cssSelector("#result span.text-success");
@@ -24,22 +24,23 @@ public class CheckBoxPage extends BasePage{
     }
 
     public void collapseAll() {
-        actions.click(collapseAllBtn);
+        actions.scrollAndClick(collapseAllBtn);
     }
 
     public void selectHome() {
-        actions.click(homeCheckbox);
+        actions.scrollAndClick(homeCheckbox);
     }
     
     public void selectDesktop() {
-        actions.click(desktopCheckbox);
+        actions.scrollAndClick(desktopCheckbox);
     }
     
     public void selectDocuments() {
-        actions.click(documentsCheckbox);
+        actions.scrollAndClick(documentsCheckbox);
     }
     
     public List<String> getSelectedResults() {
+    	actions.scrollIntoView(resultItems);
         return actions.getTexts(resultItems);
     }
 
